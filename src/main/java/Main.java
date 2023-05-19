@@ -1,4 +1,3 @@
-package main.java;
 
 import java.util.Scanner;
 
@@ -15,12 +14,12 @@ public class Main {
         getSum(arr);
     }
 
-    public static int getSum(int[] arr) {
+    public static void getSum(int[] arr) {
         int sum = 0;
 
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] % 2 == 0) {
-                sum = sum + arr[i];
+        for (int j : arr) {
+            if (j % 2 == 0) {
+                sum = sum + j;
             }
         }
 
@@ -29,7 +28,6 @@ public class Main {
         } else {
             System.out.println("The sum of even numbers is: " + sum);
         }
-        return sum;
     }
 
     public static int[] createArray(int number) {
