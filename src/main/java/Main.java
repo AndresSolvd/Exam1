@@ -1,4 +1,5 @@
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -38,11 +39,7 @@ public class Main {
         }
 
         System.out.print("The Array is: ");
-
-        for (int i : arr) {
-            System.out.print(i + " ");
-        }
-
+        Arrays.stream(arr).forEach(System.out::print);
         System.out.println();
 
         return arr;
